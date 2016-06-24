@@ -15,29 +15,25 @@ html {
     width: 100%;
     height: 100%;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0;
     text-transform: uppercase;
-    
+    font-weight: 300;
+}
+h4 {
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0;
     font-size: 18px;
     line-height: 1.5;
-    @media(min-width:768px) {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
+   
 }
 
 a {
@@ -52,13 +48,9 @@ a {
     }
 }
 
-.light {
-    font-weight: 400;
-}
-
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(white, 0.3);
+   
     text-transform: uppercase;
     font-family: "Alegreya", sans-serif;
     font-size: 1.5em;
@@ -81,8 +73,11 @@ a {
     a {
         color: #8c8c8c;
     }
+    
     .nav {
         li {
+            margin-top: 20px;
+            border-top: 1px solid $brown;
             padding: 0 20px;
             a {
                 -webkit-transition: background .3s ease-in-out;
@@ -112,8 +107,6 @@ a {
     }
     @media(min-width:768px) {
         padding: 20px 0;
-        border-bottom: none;
-        letter-spacing: 1px;
         background: transparent;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -133,82 +126,94 @@ a {
     padding: 100px 0;
     color: #8c8c8c;
     background: url(../img/bg1.jpg) no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
-    .intro-body {
+    h3 {
+        font-size: 2em;
+    }
+    .main-contact {
+        padding-bottom: 30px;
+        font-family: 'Alegreya', serif;
+    }
+   .intro-body {
         height: 500px;
         display: table-cell;
         vertical-align: middle;
         background-color: rgba(0,0,0,0.9);
-      
-        .brand-heading {
-            font-size: 40px;
-        }
         .intro-text {
-            font-size: 1em;
+            font-size: 1.2em;
         }
+    }
+    p {
+       padding: 20px 0;
     }
     @media(min-width:768px) {
         height: 100%;
         padding: 0;
         .intro-body {
             height: 500px;
-            .brand-heading {
-                font-size: 100px;
-            }
             .intro-text {
                 font-size: 1.4em;
             }
         }
     }
 }
+hr {
+    height: 1px;
+    border: 0;
+    background-color: $brown;
+ 
+}
+button {
+    background-color: transparent;
+    
+}
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #8c8c8c;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: #8c8c8c;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    &:hover,
-    &:focus {
-        outline: none;
-        color: white;
-        background: rgba(white, 0.1);
+.main-promo {
+    background-color:$bg-dark;
+    margin-right: 20px;
+    margin-left:-20px;
+    border: 1px solid $brown;
+    min-height: 335px;
+    .main-description {
+        padding: 20px;
     }
-    i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
+    img {
+        margin: 3px;
+        margin-left: -10px;
     }
-    &:hover {
-        i.animated {
-            -webkit-animation-name: pulse;
-            -moz-animation-name: pulse;
-            -webkit-animation-duration: 1.5s;
-            -moz-animation-duration: 1.5s;
-            -webkit-animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-        }
+    button {
+        margin-top: 20px;
+        border: 1px solid $brown;
+
+     border-radius: 0px;
+        position: relative;
+        bottom: 0;
+    }
+    p {
+       
+        text-align: justify;
+    }
+}
+.newsletter {
+    padding: 20px 30px;
+    color: $gray;
+    background-color: white;
+    p {
+        text-align: justify;
+    }
+
+
+    
+    button {
+        border: 1px solid $brown;
+        margin-top: 20px;
+        border-radius: 0px;
     }
 }
 #about {
     img {
         width: 100%;
     }
-    
 }
 
 @-webkit-keyframes pulse {
@@ -253,8 +258,7 @@ a {
 
 #map {
     width: 100%;
-  
- 
+   height: 80vh; 
 }
 .logo {
     position: absolute;
@@ -271,48 +275,10 @@ a {
       
     }
 }
-.newsletter {
-    background-color: white;
-    color: black;
-}
-.btn {
-    text-transform: uppercase;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border-radius: 0;
-}
 
-.btn-default {
-    border: 1px solid  #8c8c8c;
-    color: #8c8c8c;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid  #8c8c8c;
-        outline: none;
-        color: black;
-        background-color:  #8c8c8c;
-    }
-}
 
-ul.banner-social-buttons {
-    margin-top: 0;
-    @media(max-width:1199px) {
-        margin-top: 15px;
-    }
-    @media(max-width:767px) {
-        li {
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
+
+
 #contact {
     background-color: #2e2e2e;
 }
@@ -323,41 +289,41 @@ footer {
     }
 }
 
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(white, 0.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(white, 0.2);
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
-
-body {
-    -webkit-tap-highlight-color: rgba(white, 0.2);
-}
 .modal-dialog {
-    width:100%;
-    padding-top: 30vh;
+    width:100%;   
+    @media (min-width: 768px) {
+        .modal-content {
+        border: none;
+        box-shadow: none;
+    }
 }
 .modal-content {
+   border-radius: 0;
     background-color: transparent;
-}
-form {
+     height: 60vh;
+    
+        button.close {
+            color: white;
+            border: none;
+            opacity: 1;
+            font-weight: 300;
+        
+    }
+    form {
+        margin-top: 200px;
     display: block;
     padding: 20px;
     input {
         display: block;
         padding: 20px;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
     }
+    button {
+        background-color: $bg-dark;
+    }
+}
+}
 }

@@ -42,7 +42,7 @@
             <div class="container">
                 <div class="row text-center">
                     
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 main-contact">
                         <p>Skonsultuj się z nami +48 22 222 0305<br />
                        Złote tarasy, 1 piętro</p>
                     </div>
@@ -50,15 +50,15 @@
                 <div class="row">
                     <div class="col-sm-8 main-promo">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 main-img">
                                 <a href="http://www.e-zegarki.info.pl/" target="blank">
                                     <img src="./img/swatch-1.png" alt=""/></a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 main-description">
                                 <h3>Maurice Lacroix</h3>
                                 <hr>
                                 <h4>Model zegarka</h4>
-                                 <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin pharetra orci sit amet ullamcorper. Vivamus malesuada at nisl in dignissim. Morbi eu iaculis ipsum, ac scelerisque magna.  </p>
                                  <button type="button" class="btn btn-lg" ><a href="http://www.e-zegarki.info.pl/" target="blank">Kup teraz</a></button>
                                  
                         </div>
@@ -69,25 +69,30 @@
                         <h3>Newsletter</h3>
                         <hr>
                         <h4>Bądź na bieżąco</h4>
-                        <p class="intro-text">Jeśli chcesz być na bieżąco informowany o zmianach, zapisz się na newsletter</p>
+                        <p>Jeśli chcesz być na bieżąco informowany o zmianach, zapisz się na newsletter Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin pharetra orci sit amet ullamcorper.  </p>
                         <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Zapisz się</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    <div class="container">
-      <!-- Modal content-->
-      <div class="modal-content ">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog">
+          <div class="container">
+              <div class="modal-content ">
+                  <div class="modal-body">
+                      <div class="row">
+                          <button type="button" class="close" data-dismiss="modal">Zamknij <i class="fa fa-times fa-3x" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-6 col-sm-offset-3">
+                              <form class="text-center">
+                                  <input type="text" value="tu wpisz swój e-mail">
+                                  <button class="btn-lg" type="submit" value="Zapisz się">Zapisz się</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>     
           </div>
-          <form class="text-center">
-              <input type="text" value="tu wpisz swój e-mail">
-              <input type="submit" value="Zapisz się">
-          </form>
-      </div>     
-    </div>
-    </div>
+      </div>
   </div>
                     </div>
                 </div>
